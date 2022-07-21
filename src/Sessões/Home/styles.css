@@ -1,0 +1,116 @@
+.home-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 1em;
+    margin-top: 80px;
+}
+
+.home-container h1{
+    font-size: 36px;
+}
+
+.p-primeiro{
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(89, 89, 89);
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom:  10px;
+
+}
+
+.p-segundo{
+    font-size: 16px;
+    width:  100%;
+    font-weight: 500;
+    color: #7a7a7a;
+    margin-bottom: 20px;
+}
+
+.home-container img{
+    max-width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}   
+
+.sobre-mim{
+    width: 40%;
+    margin-right: 30px;
+}
+
+.sobre-mim button{
+    padding: 0.6em 1em;
+    background-color: brown;
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+i{
+    margin-left: 8px;
+    font-size: 20px;
+}
+
+.scroll-down{
+    max-width: 850px;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.scroll-down button{
+    background-color: transparent;
+    border: 0;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.scroll-down i{
+    font-size: 25px;
+    color: brown;
+    cursor: pointer;
+}
+
+.scroll-down i:nth-of-type(2){
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:768px) {
+    .home-container img{
+        position:fixed;
+        top: 90px;
+        bottom: 0;
+        right:130px;
+        width: 220px;
+        height:220px;
+}
+
+    .home-container {
+        display: block;
+    }
+
+    .home-container h1{
+        font-size: 32px;
+    }
+
+    .sobre-mim{
+        width: 100%;
+        margin-top: 160px;
+    }
+
+    .p-primeiro{
+        margin-top: 2px;
+    }
+    .p-segundo{
+        margin-bottom: 20px;
+    }
+
+}
