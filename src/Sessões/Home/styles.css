@@ -19,7 +19,6 @@
     width: 100%;
     margin-top: 10px;
     margin-bottom:  10px;
-
 }
 
 .p-segundo{
@@ -43,13 +42,19 @@
 
 .sobre-mim button{
     padding: 0.6em 1em;
-    background-color: brown;
-    color: white;
+    background-color:burlywood;
+    color:black ;
     font-weight: 600;
     font-size: 17px;
     border: 0;
     border-radius: 5px;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.sobre-mim button:hover{
+    background-color: rgb(235, 149, 36);
+    color:white;
 }
 
 i{
@@ -83,14 +88,32 @@ i{
     cursor: pointer;
 }
 
+@media screen and (max-width:1000px){
+    .home-container{
+        max-width: 700px ;
+    }
+
+    .scroll-down{
+        max-width: 700px;
+    }
+
+    .home-container img{
+        width: 250px;
+        height: 250px;
+    }
+}
+
 @media screen and (max-width:768px) {
     .home-container img{
-        position:fixed;
-        top: 90px;
-        bottom: 0;
-        right:130px;
         width: 220px;
         height:220px;
+        position:absolute;
+        top: 90px;
+        left:0;
+        right:0;
+        margin-left:auto;
+        margin-right:auto;
+        z-index: 0;
 }
 
     .home-container {
@@ -113,4 +136,7 @@ i{
         margin-bottom: 20px;
     }
 
+    .scroll-down{
+        display: none;
+    }
 }
