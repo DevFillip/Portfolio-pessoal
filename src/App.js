@@ -1,5 +1,6 @@
 import Navbar from "./layout/navbar/navbar";
 import Home from "./Sessões/Home/Home";
+import SobreMim from "./Sessões/sobre-mim/SobreMim";
 
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <div className="app">
       <Navbar />
       <Home />
+      <SobreMim />
     </div>
   );
 }
