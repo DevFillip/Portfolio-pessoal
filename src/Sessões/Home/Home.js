@@ -1,22 +1,24 @@
 import fotoPefil from '../../imagens/fotodeperfil1.png'
-import './styles.css'
+import styles from './Home.module.css'
 
 function Home(){
     return (
         <>
-        <div className="home-container">
+        <div className={styles.home_container}>
 
-            <div className="sobre-mim">
+            <div className={styles.sobre_mim}>
                 <h1>Olá, eu sou Fillip</h1>
-                <p className='p-primeiro'>Desenvolvedor Front-end</p>
-                <p className='p-segundo'>Sou estudante de Engenharia de software, e estudante de programação.</p>
+                <p className={styles.p_primeiro}>
+                    Desenvolvedor Front-end
+                </p>
+                <p className={styles.p_segundo}>Sou estudante de Engenharia de software, e estudante de programação.</p>
                 <button>contate-me<i class="uil uil-message"></i></button>
             </div>
 
             <img alt="fotodeperfil" src={fotoPefil}/>
 
         </div>
-        <div className='scroll-down'>
+        <div className={styles.scroll_down}>
             <i class="uil uil-mouse-alt"></i>
             <button>Role para baixo</button>
             <i class="uil uil-angle-double-down"></i>

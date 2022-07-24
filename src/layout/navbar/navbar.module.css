@@ -1,5 +1,5 @@
 
-.navbar-container{
+.navbar_container{
     background-color: transparent;
     padding: 1em;
     display: flex;
@@ -10,14 +10,14 @@
     margin-top: 10px;
 }
 
-p{
+.p_navbar{
     font-size: 21px;
     font-weight: 600;
     cursor: pointer;
     transition: 0.3s;
 }
 
-p:hover{
+.p_navbar:hover{
     color: #ba2c2b;
 
 }
