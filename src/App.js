@@ -1,6 +1,7 @@
 import Navbar from "./layout/navbar/navbar";
 import Home from "./Sessões/Home/Home";
 import SobreMim from "./Sessões/sobre-mim/SobreMim";
+import Tecnologias from "./Sessões/Tecnologias/Tecnologias";
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <Navbar />
       <Home />
       <SobreMim />
+      <Tecnologias />
     </div>
   );
 }
