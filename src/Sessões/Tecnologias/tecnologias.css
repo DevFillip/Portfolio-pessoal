@@ -1,0 +1,150 @@
+.habilidades_container{
+  width: 850px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 25px 30px;
+  box-shadow: 7px 7px 8px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.h1-tecnologias{
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.habilidades_container .barra{
+  margin: 20px 0;
+}
+
+.habilidades_container .barra:first-child{
+  margin-top: 0px;
+}
+
+.habilidades_container .barra .informacoes{
+  margin-bottom: 5px;
+}
+
+.habilidades_container .barra .informacoes span{
+  font-size: 17px;
+  font-weight: 500;
+  opacity: 0;
+  animation: mostrarTexto1 0.5s 1s linear forwards;
+}
+
+@keyframes mostrarTexto1 {
+  100%{
+      opacity: 1;
+  }
+
+}
+
+.habilidades_container .barra .barra_progresso{
+  position: relative;
+  height: 10px;
+  width: 100%;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.05),
+                  0px 1px rgba(255, 255,255, 0.8);
+  animation: animacao 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+
+@keyframes animacao {
+  100% {
+      transform: scaleX(1);
+  }
+}
+
+.barra .barra_progresso span{
+  height: 100%;
+  width: 80%;
+  background:burlywood ;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animacao 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+
+}
+
+  .barra_progresso.html span{
+  width: 90%;
+}
+
+.barra_progresso.css span{
+  width: 55%;
+}
+
+.barra_progresso.javascript span{
+  width: 70%;  }
+
+.barra_progresso.react-js span{
+  width: 50%;
+}
+.barra .barra_progresso span::before{
+  position: absolute;
+  content: "";
+  top: -10px;
+  right:0;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: #000;
+  opacity: 0;
+  animation: mostrarTexto2 0.5s 1.5s linear forwards;
+}
+
+.barra .barra_progresso span::after{
+  position: absolute;
+  top: -28px;
+  right:0;
+  background: #000;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 1px 8px;
+  border-radius: 3px;
+  opacity: 0;
+  animation: mostrarTexto2 0.5s 1.5s linear forwards;
+}
+
+@keyframes mostrarTexto2 {
+  100%{
+      opacity: 1;
+  }
+}
+
+.barra_progresso.html span::after{
+  content: "90%";
+}
+
+.barra_progresso.css span::after{
+  content: "55%";
+}
+
+.barra_progresso.javascript span::after{
+  content: "70%";
+}
+
+.barra_progresso.react-js span::after{
+  content: "50%";
+}
+
+@media screen and (max-width:1000px){
+  .habilidades_container{
+    width: 700px;
+}
+}
+
+@media screen and (max-width:768px) {
+  .habilidades_container{
+      width: 85%;
+  }
+}
