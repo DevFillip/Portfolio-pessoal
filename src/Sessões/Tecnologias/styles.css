@@ -1,0 +1,55 @@
+.habilidades_container{
+    width: 600px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 25px 30px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+  }
+  
+  .habilidades_container .barra{
+    margin: 20px 0;
+  }
+  
+  .habilidades_container .barra:first-child{
+    margin-top: 0px;
+  }
+  
+  .habilidades_container .barra .informacoes{
+    margin-bottom: 5px;
+  }
+  
+  .habilidades_container .barra .informacoes span{
+    font-size: 17px;
+    font-weight: 500;
+  }
+  
+  .habilidades_container .barra .barra_progresso{
+    position: relative;
+    height: 10px;
+    width: 100%;
+    background-color: #f0f0f0;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.05),
+                    0px 1px rgba(255, 255,255, 0.8);
+  }
+  
+  .barra .barra_progresso span{
+    height: 100%;
+    width: 80%;
+    background:burlywood ;
+    position: absolute;
+    border-radius: 10px;
+  }
+  
+  .barra .barra_progresso span::before{
+    position: absolute;
+    content: "";
+    top: -10px;
+    right:0;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+  }

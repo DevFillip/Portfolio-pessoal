@@ -1,0 +1,215 @@
+.contato-container{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+
+.p-contato{
+    width: 100%;
+    font-size: 42px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.formas-contato{
+    width: 300px;
+    height: 190px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.telefone, .email{
+    display: flex;
+    align-items: center;
+    padding: 5px 0px;
+}
+
+.email svg, .telefone svg{
+    font-size: 32px;
+    color: brown;
+    margin-right: 16px;
+}
+
+.email svg{
+    font-size: 36px;
+    margin-right: 10px;
+}
+
+.titulo{
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: -0px;
+}
+
+.form-contato{
+    width: 60%;
+}
+
+.input-nome, .input-email{
+    width: 42.7%;
+    height: 80px;
+    outline: 0;
+    font-size: 17px;
+    padding: 0px 15px;
+
+}
+
+.input-nome::placeholder, .input-email::placeholder, .textarea-mensagem::placeholder{
+    color: black;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.input-nome{
+    margin-right: 30px;
+}
+
+.input-nome, .input-email, .textarea-mensagem{
+    border: 0;
+    background: rgb(252, 238, 238);
+    border-radius: 5px;
+}
+
+.textarea-mensagem{
+    height: 240px;
+    margin-top: 30px;
+    width: 91%;
+    font-size: 17px;
+    padding: 8px 15px;
+    outline: 0;
+    resize:vertical;
+}
+
+.btn-contato{
+    padding: 0.7em 1em;
+    background-color:burlywood;
+    color:black ;
+    font-weight: 600;
+    font-size: 17px;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 30px;
+}
+
+.btn-contato:hover{
+    background-color:rgb(224, 166, 90);
+}
+
+.btn-contato i{
+    margin-left: 8px;
+    font-size: 20px;
+}
+
+@media screen and (max-width:1000px){
+    .p-contato{
+        margin-left:50px;
+    }
+
+    .formas-contato{
+        margin-left: 50px;
+        
+    }
+
+    .form-contato{
+        width: 50%;
+        
+    }
+
+    .input-email, .input-nome{
+        width: 40%;
+        font-size: 16px;
+    }
+
+    .textarea-mensagem{
+        width: 87.5%;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:950px){
+    .input-email, .input-nome{
+        width: 40.3%;
+        font-size: 16px;
+    }
+
+    .textarea-mensagem{
+        width: 88%;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:800px){
+    .p-contato{
+        margin-left: 40px;
+    }
+
+    .formas-contato{
+        margin-left: 40px;
+    }
+
+    .input-email, .input-nome{
+        width: 40%;
+        font-size: 16px;
+    }
+
+    .textarea-mensagem{
+        width: 89%;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .p-contato{
+        margin-left:6%;
+    }
+
+    .formas-contato{
+        margin-left: 6%;
+        margin-right: 0px;
+
+    }
+
+    .form-contato{
+        width: 88%;
+        margin-left: 6%;
+        padding-bottom: 20px;
+    }
+
+    .telefone{
+        margin-bottom: 10px;
+    }
+
+
+    .input-nome, .input-email{
+        width: 100%;
+        height: 60px;
+        font-size: 16px;
+        padding: 0px 15px;
+    }
+
+    .input-nome{
+        margin-bottom: 20px;
+    }
+
+    .input-email{
+        margin-bottom: -10px;
+    }
+
+    .textarea-mensagem{
+        width: 100%;
+        height: 160px;
+    }
+
+    .btn-contato{
+        padding: 0.6em 0.9em;
+        font-size: 16px;
+    }
+}
