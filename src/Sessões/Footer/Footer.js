@@ -2,6 +2,21 @@ import './footer.css'
 import { BsLinkedin, BsYoutube, BsInstagram, BsGithub} from 'react-icons/bs'
 
 function Footer(){
+
+    const scrollPortfolio = () => {
+        window.scrollTo({
+            top: 1530,
+            behavior: "smooth"
+        })
+    }
+
+    function scrollSobre(){
+        window.scrollTo({
+            top: 530,
+            behavior: "smooth"
+            })
+    }
+
     return (
         <footer>
             <div className='footer-container'>
@@ -12,8 +27,8 @@ function Footer(){
 
                 <div className='partes-pagina'>
                     <ul>
-                        <li>Portfólios</li>
-                        <li>Sobre mim</li>
+                        <li onClick={scrollPortfolio}>Portfólios</li>
+                        <li onClick={scrollSobre}>Sobre mim</li>
                     </ul>
                 </div>
 
@@ -28,5 +43,7 @@ function Footer(){
         </footer>   
     )
 }
+
+
 
 export default Footer

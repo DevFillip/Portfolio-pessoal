@@ -11,7 +11,7 @@ function Contato(){
                 <div className="telefone">
                     <FiPhoneCall />
                     <div className="dados-telefone"> 
-                        <p className='titulo'>Celular</p>
+                        <p className='titulo'>Me ligue</p>
                         <p>13 98122-7376</p>
                     </div>
                 </div>
