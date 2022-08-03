@@ -39,7 +39,7 @@ function SwiperCarousel(){
                     <div class="informacoes">
                         <h3>Landing Page</h3>
                         <p>Nesse projeto criei uma Landing page real baseada no site da FlexMajorSchool, fiz toda em React JS e busquei ser o mais fiel possível fazendo ao meu modo.</p>
-                        <button>Ver mais<i class="uil uil-arrow-right"></i></button>
+                        <a href='https://landing-page-fh.netlify.app' target='https://landing-page-fh.netlify.app'><button>Ver mais<i class="uil uil-arrow-right"></i></button></a>
                     </div>
             </SwiperSlide>
             <SwiperSlide className='card'>
@@ -59,7 +59,9 @@ function SwiperCarousel(){
                 <div class="informacoes">
                     <h3>Todo-App</h3>
                     <p>Esse site eu criei com o intuito de trabalhar com todo o CRUD, e testar meus conhecimentos aprendidos.</p>
-                    <button>Ver mais<i class="uil uil-arrow-right"></i></button>
+
+                    <a href='https://todoapp-fh.netlify.app' target='https://todoapp-fh.netlify.app'><button>Ver mais<i class="uil uil-arrow-right"></i></button></a>
+                    
                 </div>
             </SwiperSlide>
         </Swiper>
