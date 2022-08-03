@@ -66,6 +66,7 @@ i{
     display: flex;
     align-items: center;
     margin: 0 auto;
+    margin-top: 20px;
     cursor: pointer;
     animation: rolarPraBaixo 2s infinite;
     transform: translateY(0);
