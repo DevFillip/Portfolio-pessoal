@@ -62,12 +62,10 @@ i{
 }
 
 .scroll_down{
-    position: absolute;
-    width: 180px;
-    left: 250px;
-    margin-top: 40px;
+    max-width: 850px;
     display: flex;
     align-items: center;
+    margin: 0 auto;
     cursor: pointer;
     animation: rolarPraBaixo 2s infinite;
     transform: translateY(0);
