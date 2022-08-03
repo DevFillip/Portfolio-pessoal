@@ -5,7 +5,10 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import imagemteste from '../../imagens/pexels-red-zeppelin-12638731 (1).jpg'
+import portfolio1 from '../../imagens/Portfolio 1.jpg'
+import portfolio2 from '../../imagens/Portfolio 2.jpg'
+import portfolio3 from '../../imagens/Portfolio 3.jpg'
+
 
 import { Pagination, Navigation } from "swiper";
 
@@ -31,32 +34,32 @@ function SwiperCarousel(){
 
             <SwiperSlide className='card'>
                 <div class="card-image">
-                        <img src={imagemteste} alt='primeiro-projeto'/>
+                        <img src={portfolio1} alt='primeiro-projeto'/>
                     </div>
                     <div class="informacoes">
-                        <h3>Primeiro projeto</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                        <button>Ver mais</button>
+                        <h3>Landing Page</h3>
+                        <p>Nesse projeto criei uma Landing page real baseada no site da FlexMajorSchool, fiz toda em React JS e busquei ser o mais fiel possível fazendo ao meu modo.</p>
+                        <button>Ver mais<i class="uil uil-arrow-right"></i></button>
                     </div>
             </SwiperSlide>
             <SwiperSlide className='card'>
                 <div class="card-image">
-                    <img src={imagemteste} alt='segundo-projeto'/>
+                    <img src={portfolio2} alt='segundo-projeto'/>
                 </div>
                 <div class="informacoes">
-                    <h3>Primeiro projeto</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <button>Ver mais</button>
+                    <h3>App de tempo</h3>
+                    <p>Nesse aplicativo consumi uma Api externa e modelei os dados para serem mostrados do jeito que eu queria.</p>
+                    <a href='https://github.com/DevFillip/tempo' target='https://github.com/DevFillip/tempo'><button>Ver mais<i class="uil uil-arrow-right"></i></button></a>
                 </div>
             </SwiperSlide>
             <SwiperSlide className='card'>
                 <div class="card-image">
-                    <img src={imagemteste} alt='terceiro-projeto'/>
+                    <img src={portfolio3} alt='terceiro-projeto'/>
                 </div>
                 <div class="informacoes">
-                    <h3>Primeiro projeto</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <button>Ver mais</button>
+                    <h3>Todo-App</h3>
+                    <p>Esse site eu criei com o intuito de trabalhar com todo o CRUD, e testar meus conhecimentos aprendidos.</p>
+                    <button>Ver mais<i class="uil uil-arrow-right"></i></button>
                 </div>
             </SwiperSlide>
         </Swiper>

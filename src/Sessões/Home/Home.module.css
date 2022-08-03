@@ -62,24 +62,32 @@ i{
 }
 
 .scroll_down{
-    max-width: 850px;
-    margin: 0 auto;
+    position: absolute;
+    width: 180px;
+    left: 250px;
     margin-top: 40px;
     display: flex;
     align-items: center;
+    cursor: pointer;
+    animation: rolarPraBaixo 2s infinite;
+    transform: translateY(0);
 }
 
 .scroll_down button{
     background-color: transparent;
     border: 0;
     margin-left: 5px;
-    cursor: pointer;
+    cursor:pointer;
+}
+
+@keyframes rolarPraBaixo {
+    0%, 100% {transform: translateY(0)}
+  50% {transform: translateY(15px)}
 }
 
 .scroll_down i{
     font-size: 25px;
     color: brown;
-    cursor: pointer;
 }
 
 .scroll_down i:nth-of-type(2){

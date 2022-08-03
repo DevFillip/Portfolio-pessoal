@@ -33,10 +33,10 @@ function Footer(){
                 </div>
 
                 <div className='rede-sociais'>
-                    <BsLinkedin />
-                    <BsYoutube/>
-                    <BsInstagram />
-                    <BsGithub />
+                    <a target='https://www.linkedin.com/in/fillip-hudson-8455b5235/' href='https://www.linkedin.com/in/fillip-hudson-8455b5235/'><BsLinkedin /></a>
+                    <a target='https://www.youtube.com/channel/UCUOYpRNIBKtyPcswYjhRa8A' href="https://www.youtube.com/channel/UCUOYpRNIBKtyPcswYjhRa8A"><BsYoutube/></a>
+                    <a target='https://www.instagram.com/fillip_hudson/' href="https://www.instagram.com/fillip_hudson/"><BsInstagram /></a>
+                    <a target='https://github.com/DevFillip' href='https://github.com/DevFillip'><BsGithub /></a>
                 </div>
             </div>
             <p className='copy'><span>&copy;</span>Feito por Fillip</p>
