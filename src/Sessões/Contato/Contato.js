@@ -30,15 +30,17 @@ function Contato(){
                     <input type='text' 
                         placeholder="Nome"
                         className='input-nome' 
+                        name='name'
                         required
                     />
                     <input type='email' 
                         placeholder="Email" 
-                        className='input-email' 
+                        className='input-email'
+                        name='email' 
                         required
                     />
                     <textarea placeholder="Mensagem" className='textarea-mensagem'
-                    required></textarea>
+                    required name='message'></textarea>
                     <button className='btn-contato' type='submit'>Enviar mensagem<i class="uil uil-message"></i></button>
                     </form>
                 </div>
